@@ -1,0 +1,465 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #F9F9F9;
+}
+
+.content {
+    max-width: 1128px;
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+}
+
+.NavContent {
+    width: 1128px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    padding: 0 2rem;
+    height: 4.375rem;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px rgba(152, 152, 152, 0.25);
+}
+
+nav p {
+    font-size: 1.875rem;
+    color: #C6C6C6;
+    font-weight: 500;
+    margin-right: 3rem;
+    padding: 0;
+}
+
+nav span {
+    color: #61C4EE;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 4.25rem;
+    align-items: center;
+}
+
+nav li,
+nav a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+nav img {
+    width: 3rem;
+    height: 3rem;
+    aspect-ratio: 1/1;
+    border-radius: 0.625rem;
+    border: 1px solid #FFF;
+}
+
+nav .group {
+    display: flex;
+}
+
+.profileCard {
+    min-width: 18.875rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.25rem;
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px rgba(152, 152, 152, 0.25);
+    height: min-content;
+}
+
+.profileCard img {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+}
+
+.profileCard .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.profileCard .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: min-content;
+}
+
+.profileCard h1,
+.settings h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0;
+}
+
+.profileCard p {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.profileCard h2 {
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.settings {
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px rgba(152, 152, 152, 0.25);
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.settings img {
+    width: 20px;
+    height: 20px;
+}
+
+.column2 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 3rem;
+    min-height: 55rem;
+}
+
+.column2 h6 {
+    color: #C6C6C6;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.space {
+    margin-bottom: 2rem;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#info {
+    padding: 0 1rem;
+    justify-content: space-between;
+}
+
+.button {
+    height: 4rem;
+    background-color: #61C4EE;
+    flex: 1;
+    border-radius: 0.9375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button p {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.button2 {
+    background-color: white;
+    border: 3.5px solid #61C4EE;
+}
+
+.button2 p {
+    color: #61C4EE;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 1rem; */
+}
+
+.phone {
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.phone img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.phone h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.phone p {
+    font-size: 1rem;
+}
+
+.bar {
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    min-width: 270px;
+    background-color: #61C4EE;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.overview {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1.25rem;
+    box-shadow: 0px 4px 10px 0px rgba(152, 152, 152, 0.25);
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.overview img {
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.overview h1 {
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.overview h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #C6C6C6;
+    margin-bottom: 2rem;
+}
+
+.overview p {
+    font-weight: 500;
+}
+
+.foodTile p {
+    font-size: 1rem;
+}
+
+.foodTile {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.desc {
+    color: #C6C6C6;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(239, 239, 239);
+    margin-bottom: 1rem;
+}
+
+.bottom-bar {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #61C4EE;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    height: 4rem;
+    color: white;
+    border-radius: 1rem;
+}
+
+.bottom-bar img {
+    height: 1rem;
+    width: 1rem;
+}
+
+.profileCardSmall {
+    display: none;
+    margin-bottom: 2rem;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 10rem;
+    height: 8rem;
+    background-color: #61C4EE;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+}
+
+.box h2 {
+    color: #FFF;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .profileCard {
+        display: none;
+    }
+
+    nav img {
+        display: none;
+    }
+
+    .profileCardSmall {
+        display: flex;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: none;
+    }
+
+    .phone {
+        display: initial;
+    }
+
+    .column2 {
+        padding: 0 1rem;
+    }
+
+    .panel .card {
+        padding: 1rem;
+        height: 9.3rem;
+    }
+
+    .card h1 {
+        font-size: 2.25rem;
+    }
+
+    .card h2 {
+        font-size: 0.75rem;
+    }
+
+    .card span {
+        font-size: 1.125rem;
+    }
+
+    .panel {
+        gap: 1rem;
+    }
+
+    .column2 h6,
+    .overview p {
+        font-size: 1rem;
+    }
+
+    .button {
+        height: 2.7rem;
+        min-width: 130px;
+    }
+
+    .button p,
+    .bar p {
+        font-size: 0.9rem;
+    }
+
+    .row {
+        gap: 0.5rem;
+    }
+
+    .workoutCard {
+        height: 4.375rem;
+        padding: 0.5rem;
+    }
+
+    .workoutCard .date {
+        height: 3.4rem;
+        width: 3.4rem;
+        border-radius: 0.7rem;
+    }
+
+    .calendar {
+        gap: 0.3rem;
+    }
+
+    .c {
+        height: 3.625rem;
+        border-radius: 1.2rem;
+    }
+
+    .overview h1 {
+        font-size: 1.3rem;
+    }
+
+    .overview h2 {
+        font-size: 0.9rem;
+    }
+
+    .bottom-bar {
+        display: flex;
+    }
+
+    .bar {
+        height: 2.7rem;
+    }
+
+    .foodTile p,
+    #info p {
+        font-size: 0.85rem;
+    }
+
+    .box {
+        width: 8rem;
+        height: 6rem;
+    }
+
+    .box h1 {
+        font-size: 1rem;
+    }
+
+    .box h2 {
+        font-size: 0.6rem;
+    }
+}
