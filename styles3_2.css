@@ -1,26 +1,54 @@
-.settings h1 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    padding: 0;
+a {
+    text-decoration: none;
+    color: black;
 }
 
-.settings {
-    background: #FFF;
-    box-shadow: 0px 4px 10px 0px rgba(152, 152, 152, 0.25);
-    border-radius: 1.25rem;
+
+
+.button:hover {
+    background-color: #82d5f9;
+}
+
+.button2:hover p {
+    color: white;
+}
+
+.tile {
+    width: 100%;
+    height: 8rem;
+    background-color: rgb(255, 255, 255);
     display: flex;
-    flex-direction: column;
+    align-items: center;
     padding: 1rem;
+    justify-content: start;
+    border-radius: 0.9375rem;
+    box-shadow: 0px 4px 10px 0px rgba(152, 152, 152, 0.15);
+    min-width: 255px;
+    margin-bottom: 1rem;
+}
+
+.tile img {
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1.8rem;
+    margin-left: 1rem;
+}
+
+.tile h1 {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.column {
+    justify-content: start;
     gap: 1rem;
+    height: 100%;
 }
 
-.settings img {
-    width: 20px;
-    height: 20px;
-}
-
-.settings p {
-    font-size: 1rem;
+.tile p {
+    color: rgb(217, 217, 217);
 }
 
 .column2 {
@@ -39,7 +67,7 @@
 }
 
 .space {
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .column {
@@ -61,6 +89,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.2s;
+}
+
+#outline {
+    outline: 3px solid #61C4EE;
 }
 
 .button p {
@@ -80,7 +113,28 @@
 
 .row {
     display: flex;
-    justify-content: space-between;
+    gap: 2rem;
+}
+
+.phone {
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.phone img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.phone h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.phone p {
+    font-size: 1rem;
 }
 
 .bar {
@@ -129,56 +183,26 @@
     width: 1rem;
 }
 
-.profileCardSmall {
-    display: none;
-    margin-bottom: 2rem;
-    gap: 1rem;
-}
-
-.box {
+#btn {
     flex: 1;
-    height: 8rem;
-    background-color: #61C4EE;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-
-.box h1 {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: white;
-    text-align: center;
-}
-
-.box h2 {
-    color: #FFF;
-    font-size: 0.85rem;
-    font-weight: 400;
-    text-align: center;
-}
-
-
-@media only screen and (max-width: 767px) {
-    .profileCardSmall {
-        display: flex;
-    }
-}
-
 
 
 @media only screen and (max-width: 600px) {
-    .settings h1 {
-        font-size: 1.3rem;
+    .phone {
+        display: initial;
     }
 
     .column2 {
         padding: 0 1rem;
     }
 
-    .column2 h6 {
+    .tile p {
+        font-size: 0.75rem;
+    }
+
+    .column2 h6,
+    .tile h1 {
         font-size: 1rem;
     }
 
@@ -187,12 +211,23 @@
         min-width: 130px;
     }
 
-    .button p {
+    .button p,
+    .bar p {
         font-size: 0.9rem;
     }
 
     .row {
         gap: 0.5rem;
+    }
+
+    .tile {
+        height: 4.375rem;
+        padding: 0.5rem;
+    }
+
+    .tile img {
+        height: 2rem;
+        width: 2rem;
     }
 
     .bottom-bar {
@@ -203,21 +238,9 @@
         height: 2.7rem;
     }
 
-    #info p,
-    .settings p {
+    .foodTile p,
+    #info p {
         font-size: 0.85rem;
     }
 
-    .box {
-        width: 8rem;
-        height: 6rem;
-    }
-
-    .box h1 {
-        font-size: 0.8rem;
-    }
-
-    .box h2 {
-        font-size: 0.6rem;
-    }
 }

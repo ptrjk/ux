@@ -4,7 +4,7 @@
 <head>
     <title>UX</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <link rel="stylesheet" type="text/css" href="styles3_2.css">
     <link rel="stylesheet" type="text/css" href="nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,83 +56,51 @@
         </div>
         <div class="column2">
             <section class="phone">
-                <h1>Workouts</h1>
-                <p>Weekly Training Overview</p>
+                <h1>Calories</h1>
+                <p>Weekly Tracker Overview</p>
             </section>
-            <div class="calendar">
-                <div class="c">
-                    <p>Mon</p>
-                    <p>5</p>
-                </div>
-                <div class="c">
-                    <p>Tue</p>
-                    <p>6</p>
-                </div>
-                <div class="c">
-                    <p>Wed</p>
-                    <p>7</p>
-                </div>
-                <div class="c" id="selected">
-                    <p>Thu</p>
-                    <p>8</p>
-                </div>
-                <div class="c">
-                    <p>Fri</p>
-                    <p>9</p>
-                </div>
-                <div class="c">
-                    <p>Sat</p>
-                    <p>10</p>
-                </div>
-                <div class="c">
-                    <p>Sun</p>
-                    <p>11</p>
-                </div>
+            <div class="bar">
+                <p>Remaining Calories:</p>
+                <p>1450/2700</p>
             </div>
-            <h6>My workouts</h6>
-            <div class="workoutCard space">
-                <div class="left">
-                    <div class="date">
-                        <img src="icons/weight.svg" alt="icon">
-                    </div>
-                    <div class="column">
-                        <h1>Full Body</h1>
-                        <p>Tap for more</p>
-                    </div>
-                </div>
-            </div>
+
             <div class="row space">
+                <a href="calories.html" id="btn">
+                    <div class="button button2">
+                        <p>Meals</p>
+                    </div>
+                </a>
                 <div class="button button1">
-                    <p>New workout</p>
-                </div>
-                <div class="button button2">
-                    <p>Exercises</p>
+                    <p>Add Meal</p>
                 </div>
             </div>
-            <h6>Suggested Workout For you</h6>
-            <div class="workoutCard">
-                <div class="left">
-                    <div class="date"> <img src="icons/weight.svg" alt="icon"></div>
+            <h6>Add items</h6>
+            <a href="addMeal.html">
+                <div class="tile" id="outline">
+                    <img src="icons/plus.svg" alt="icon">
                     <div class="column">
-                        <h1>Arms</h1>
-                        <p>Tap to start</p>
+                        <h1>Quick Add</h1>
+                        <p>Quickly add your calories and macronutrients.</p>
                     </div>
                 </div>
+            </a>
+
+            <div class="tile">
+                <img src="icons/food2.svg" alt="icon">
+                <div class="column">
+                    <h1>Create a meal</h1>
+                    <p>Create your own meal!</p>
+                </div>
             </div>
-            <div class="workoutCard">
-                <div class="left">
-                    <div class="date"> <img src="icons/weight.svg" alt="icon"></div>
-                    <div class="column">
-                        <h1>Lower Body</h1>
-                        <p>Tap to start</p>
-                    </div>
+            <div class="tile">
+                <img src="icons/icon3.png" alt="icon">
+                <div class="column">
+                    <h1>Add a drink</h1>
+                    <p>Add your drink, because the drinking regime is important.</p>
                 </div>
             </div>
         </div>
-
     </div>
-
-
 </body>
 
 </html>
